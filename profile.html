@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<style>
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .logout-btn {
+            background-color: #dc3545;
+            border: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #a52e38;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        img{
+            height: 5rem;
+            
+        }
+        input{
+            margin-top: 1rem;
+            border-radius: 1px;
+        }
+        .Update button{
+            margin-top: 1rem;
+            border-radius: 5px;
+
+        }
+
+
+</style>
+<body>
+    <nav>
+        <div class="navbar">
+            <span id="username">Username</span>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>Welcome, <span id="username"></span>!</h2>
+        <!-- Add your profile content here -->
+        <img src="MY PIC.jfif" alt="profile pic">
+        <br>
+        <br>
+        Zeeshan Shafiq
+        <br>
+        <br>
+        <label for="Password"><input type="text" placeholder="Old Password"></label>
+        <br>
+        <input type="text" placeholder="New Password">
+        <br>
+        <input type="text" placeholder="Repeat Password">
+
+    <br>
+    <br>
+    <br>
+    <button class="Update">Update Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
